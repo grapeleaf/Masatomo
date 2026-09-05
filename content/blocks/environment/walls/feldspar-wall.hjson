@@ -1,0 +1,7 @@
+type: StaticWall
+name: Feldspar Wall
+variants: 3
+
+attributes: {
+    quartz: 1
+}

@@ -1,0 +1,27 @@
+localizedName: "Large Ferronickel Wall"
+description: Protects structures from incoming damage.
+
+type: Wall
+category: defense
+
+//Stat
+size: 2
+scaledHealth: 700
+armor: 12
+
+requirements: [
+  ferronickel/30
+]
+
+//Visual
+squareSprite: false
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: ferronickel-wall-small
+}
+researchCost: [
+    hematite/225
+]

@@ -1,0 +1,29 @@
+localizedName: "Fluid Pipeline"
+type: ArmoredConduit
+category: liquid
+
+//Stat
+health: 50
+liquidCapacity: 35
+
+requirements: [
+    nickel/1
+    quartz/1
+]
+
+junctionReplacement: liquid-junction
+bridgeReplacement: bridge-conduit
+
+//Visual
+underBullets: true
+botColor: 1d1d23
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: core-chamber
+}
+researchCost: [
+    quartz/35
+]

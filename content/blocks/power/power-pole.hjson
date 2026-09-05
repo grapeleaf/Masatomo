@@ -1,0 +1,41 @@
+localizedName: "Power Pole"
+type: PowerNode
+size: 1
+
+category: power
+
+//Stat
+laserRange: 15
+maxNodes: 10
+crushFragile: true
+
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
+
+consumes: {
+    powerBuffered: 500
+}
+
+autolink: true
+requirements: [
+    nickel/6
+]
+
+//Visual
+squareSprite: false
+
+laserScale: 0.5
+laserColor1: ffffff
+laserColor2: e2ddff
+
+//Tech Tree
+//alwaysUnlocked: true
+
+research: {
+    parent: thermogenerator
+}
+researchCost: [
+    nickel/45
+]

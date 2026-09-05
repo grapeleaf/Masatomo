@@ -1,0 +1,51 @@
+localizedName: "Thermocouple Generator"
+type: ThermalGenerator
+category: power
+
+//Stat
+powerProduction: 2
+
+requirements: [
+    hematite/75
+    nickel/50
+]
+
+//Visual
+size: 2
+squareSprite: false
+
+ambientSound: loopHum
+ambientSoundVolume: 0.08
+
+generateEffect: steam
+effectChance: 0.03
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawBlurSpin
+        suffix: "-rotator"
+        rotateSpeed: 10
+        blurThresh: 0.03
+    }
+    {
+        type: DrawRegion
+        suffix: "-top"
+    }
+  ]
+}
+
+//Tech Tree
+//alwaysUnlocked: true
+
+research: {
+    parent: hydraulic-drill
+}
+researchCost: [
+    hematite/100
+    nickel/100
+]

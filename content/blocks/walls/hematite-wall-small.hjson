@@ -1,0 +1,27 @@
+localizedName: "Hematite Wall"
+description: Protects structures from incoming damage.
+
+type: Wall
+category: defense
+
+//Stat
+size: 1
+health: 500
+armor: 3
+
+requirements: [
+  hematite/6
+]
+
+//Visual
+squareSprite: false
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: fragment
+}
+researchCost: [
+    hematite/75
+]

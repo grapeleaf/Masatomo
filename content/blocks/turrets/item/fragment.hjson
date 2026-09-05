@@ -1,0 +1,102 @@
+localizedName: "Fragment"
+type: ItemTurret
+description: "Fires a spread of fragmented shards, excels at single target damage."
+
+category: turret
+size: 2
+
+//Stat
+targetAir: true
+targetGround: true
+predictTarget: true
+
+scaledHealth: 200
+
+reload: 60
+range: 130
+rotateSpeed: 2.5
+recoil: 1.2
+
+inaccuracy: 1.2
+velocityRnd: 0.2
+consumeAmmoOnce: true
+
+ammoPerShot: 2
+
+requirements: [
+    hematite/150
+    nickel/150
+    msilicon/100
+]
+buildTime: 120
+
+//Gun
+shootY: 6
+shootCone: 30
+shoot: {
+    type: ShootSpread
+    shots: 4
+    spread: 3
+}
+
+shootSound: shootDiffuse
+shootEffect: shootBig 
+smokeEffect: shootSmokeSquare   
+
+
+//Ammo
+//ammoPerShot: 1
+maxAmmo: 45
+
+ammoTypes: {
+    hematite: {
+        type: BasicBulletType
+        buildingDamageMultiplier: 0.15
+        damage: 40
+        speed: 5
+
+        hitSize: 8
+        width: 18
+        height: 20
+
+        knockback: 2
+
+        trailWidth: 3
+        trailLength: 4
+
+        lifetime: 35
+        hitColor: fc826c
+        backColor: fc826c
+        trailColor: fc826c
+    }
+    
+}
+
+//Visual
+outlineColor: 1d1d23
+heatColor: fabe28
+
+drawer: {
+    type: DrawTurret
+    basePrefix: "armored-"
+    parts: [
+        {
+            type: RegionPart
+            suffix: "-barrel"
+            progress: recoil
+            moveY: -1.5
+        }
+    ]
+}
+
+//TechTree
+alwaysUnlocked: true
+
+research: {
+    parent: core-chamber
+}
+researchCost: [
+    hematite/150
+    nickel/100
+    silicon/25
+]

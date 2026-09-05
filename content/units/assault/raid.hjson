@@ -1,0 +1,120 @@
+localizedName: "Raid"
+description: "The primary assault unit. Fires dual armor-piercing bullets at enemies. Cannot walk over solid blocks"
+
+envDisabled: 0
+
+//Stat
+health: 650
+armor: 8
+hitSize: 8
+
+speed: 0.66
+rotateSpeed: 3.5
+drag: 0.14
+
+faceTarget: true
+targetAir: true
+targetGround: true
+
+// if true and this is a legged unit, this unit can walk over blocks.
+//(LIE)
+allowLegStep: false
+legPhysicsLayer: false
+
+//Visual
+outlineColor: 1d1d23
+
+//number of legs this unit has (must have the correct type to function!)
+legCount: 4
+//size of groups in which legs move. for example, insects (6 legs) usually move legs in groups of 3.
+legGroupSize: 2
+
+//If true, legs always try to move around even when the unit is not moving (leads to more natural behavior)
+legContinuousMove: true
+//If true, legs are locked to the base of the unit instead of being on an implicit rotating "mount".
+lockLegBase: true
+
+//for legs without "joints", this is how much the second leg sprite is moved "back" by, so it covers the joint region (it's hard to explain without an image)
+legExtension: -3
+//leg offset from the center of the unit
+legBaseOffset: 3.5
+//total length of a leg (both segments)
+legLength: 10
+//maximum length of an individual leg as fraction of real length
+legMaxLength: 1.1
+//minimum length of an individual leg as fraction of real length
+legMinLength: 0.2
+
+//scaling for how far away legs *try* to be from the body (not their actual length); e.g. if set to 0.5, legs will appear somewhat folded
+legLengthScl: 1
+//scale for how far in front (relative to unit velocity) legs try to place themselves; if legs lag behind a unit, increase this number
+legForwardScl: 0.8
+
+//scaling for space between leg movements, lower = shorter strides, higher = longer strides
+legMoveSpace: 1.15
+
+//Weapon
+weapons: [
+    {
+        name: raid-weapon
+        x: 4.25
+        y: 3.25
+        reload: 35
+        recoil: 1.35
+
+        heatColor: feb380
+        cooldownTime: 35
+        
+        layerOffset: -0.01
+        mirror: true
+        alternate: false
+
+        shootSound: shootArtillerySmall
+        bullet: {
+            type: BasicBulletType
+            collidesAir: true
+            collidesGround: true
+
+            speed: 3
+            lifetime: 40
+            damage: 30
+            armorMultiplier: 0.79
+
+            hitSize: 4
+            width: 8
+            height: 13
+
+            trailWidth: 2
+            trailLength: 10
+
+            shootEffect: none
+            smokeEffect: shootSmokeSquare
+
+            despawnSound: explosionPlasmaSmall
+            despawnEffect: [
+                hitBulletColor,
+                {
+                    type: WaveEffect
+                    sizeFrom: 0.3
+                    sizeTo: 22
+                    strokeFrom: 1.5
+                    strokeTo: 0.5
+                    colorFrom: bc5452
+                    colorTo: ffc198ff
+                    lifetime: 12
+                }
+            ]
+
+            hitColor: feb380
+            backColor: bc5452
+            trailColor: feb380
+        }
+    }
+]
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: core-chamber
+}

@@ -1,0 +1,30 @@
+localizedName: "Shielded Underflow Gate"
+description: "Opposite of an overflow duct. Outputs to the front if the left and right paths are blocked."
+
+type: OverflowDuct
+category: distribution
+
+//Stat
+health: 120
+speed: 4.2857
+solid: false
+invert: true
+
+requirements: [
+    hematite/12
+    nickel/12
+]
+
+//Visual
+squareSprite: false
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: shielded-overflow-gate
+}
+researchCost: [
+    hematite/25
+    nickel/25
+]

@@ -1,0 +1,6 @@
+type: StaticWall
+name: Volanic Basalt Wall
+variants: 2
+
+attributes: {
+}

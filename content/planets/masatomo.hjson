@@ -1,0 +1,164 @@
+# The planet's display name. If you want to support multiple languages, use bundles instead!
+localizedName: Masatomo
+accessible: true
+alwaysUnlocked: true
+visible: true
+
+# The mesh of the planet. At least MultiMesh is supported, so you can put multiple
+# NoiseMesh'es to your planet!
+
+mesh: [
+   {
+    //vitric magma
+    type: SunMesh 
+    divisions: 5
+    octaves: 1
+    persistence: 1.5
+    scl: 2
+    pow: 1
+    mag: 3
+    colorScale: 1
+    colors: [
+      ff9a47,
+      eb7a39,
+      f06940,
+      ]
+  }
+  {
+    //sulfur
+    type: NoiseMesh
+    divisions: 5
+    seed: 231
+    radius: 0.79
+    color1: 88822c
+    color2: 63592b
+    octaves: 4
+    persistence: 1.1
+    mag: 1.3
+    scale: 0.62
+  }
+  {
+    //basalt
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.83
+    seed: 224
+    color1: 7c5a54
+    color2: 573d36
+    octaves: 3.2
+    persistence: 0.5
+    mag: 1
+    scale: 1
+  }
+  {
+    //feldspar
+    type: NoiseMesh
+    divisions: 5
+    seed: 101
+    radius: 0.59
+    color1: 96563d
+    color2: 5c3824
+    octaves: 4
+    persistence: 0.73
+    mag: 5
+    scale: 1
+  }
+  {
+    //feldspar 2
+    type: NoiseMesh
+    divisions: 5
+    seed: 101
+    radius: 0.69
+    color1: 8b3c31
+    color2: 5c2f24
+    octaves: 4
+    persistence: 0.73
+    mag: 3
+    scale: 0.5
+  }
+  
+  
+]
+
+# The mesh used for clouds. (Now supported btw)
+cloudMesh: {
+  # A class name.
+  type: HexSkyMesh
+  # A number used for cloud generation.
+  seed: 66422243
+  # Cloud move speed.
+  speed: 0.8
+  # Cloud sphere radius.
+  radius: 0.17
+  # Clouds "quality". More divisions = more hexagons.
+  divisions: 7
+  # Cloud color.
+  color: d1db9791
+  # A noise property.
+  octaves: 3
+  # A noise property.
+  persistence: 0.7
+  # Maximum number threshold for the noise.
+  thresh: 0.46
+}
+
+generator: {
+  octaves: 3
+  persistence: 0.52
+  scale: 35
+  mag: 0.721
+  thresh: 1.152
+  min: 100
+  max: 100
+  radMin: 220
+  radMax: 600
+  iceChance: 0.51
+  carbonChance: 0.32
+  berylChance: 0
+  ferricChance: 0.26
+}
+
+//Visual
+iconColor: fcea47ff
+landCloudColor: d1db9791
+hasAtmosphere: true
+atmosphereColor: 8b6b0030
+bloom: false
+
+//Planet
+radius: 0.9
+defaultEnv: 17
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+parent: sun
+solarSystem: sun
+tidalLock: true
+drawOrbit: true
+orbitRadius: 25
+orbitSpacing: 2
+minZoom: 1
+
+//Sector
+startSector: 4
+sectorSize: 2
+sectorApproxRadius: 5
+sectorSeed: 14513
+
+
+//Rules
+defaultCore: core-chamber
+
+prebuildBase: true
+showRtsAIRule: true
+clearSectorOnLose: true
+
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowCampaignRules: false
+allowLaunchToNumbered: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowLegacyLaunchPads: false
+
+enemyCoreSpawnReplace: false
+updateLighting: false

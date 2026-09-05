@@ -1,0 +1,28 @@
+localizedName: "Shielded Router"
+description: "Distributes items equally across three directions. Only accepts items from the back side. Can be configured as an item sorter."
+
+type: DuctRouter
+category: distribution
+
+//Stat
+health: 120
+speed: 4.2857
+regionRotated1: 1
+solid: false
+
+requirements: [
+    hematite/15
+]
+
+//Visual
+squareSprite: true
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: shielded-conveyor
+}
+researchCost: [
+    hematite/30
+]

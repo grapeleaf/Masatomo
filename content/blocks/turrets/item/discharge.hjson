@@ -1,0 +1,126 @@
+localizedName: "Discharge"
+type: ItemTurret
+description: "Fires a rapid stream of bullets at enemies, excellent against swarms."
+
+category: turret
+size: 3
+
+//Stat
+targetAir: true
+targetGround: true
+predictTarget: true
+
+scaledHealth: 375
+
+reload: 7
+range: 190
+rotateSpeed: 3.5
+recoil: 1.4
+recoilTime: 15
+
+minWarmup: 0.8
+
+inaccuracy: 1.2
+velocityRnd: 0.2
+consumeAmmoOnce: true
+
+requirements: [
+    hematite/200
+    nickel/200
+    msilicon/150
+]
+
+//Gun
+shootY: 10.25
+shootCone: 225
+shoot: {
+    type: ShootAlternate
+    barrels: 8
+    spread: 0
+}
+
+shootSound: shootRipple
+shootEffect: shootBig 
+smokeEffect: shootSmokeSquare
+
+
+//Ammo
+//ammoPerShot: 1
+maxAmmo: 45
+
+ammoTypes: {
+    nickel: {
+        type: BasicBulletType
+        buildingDamageMultiplier: 0.15
+        damage: 25
+        speed: 12
+
+        hitSize: 4
+        width: 7
+        height: 10
+
+        pierce: true
+        pierceCap: 5
+
+        trailWidth: 1.5
+        trailLength: 8
+
+        lifetime: 15
+        hitColor: fff6a8
+        backColor: fff6a8
+        trailColor: fff6a8
+    }
+    
+}
+
+//Visual
+outlineColor: 1d1d23
+heatColor: ffef5d
+
+drawer: {
+    type: DrawTurret
+    basePrefix: "armored-"
+    parts: [
+        {
+            type: RegionPart
+            suffix: "-barrel"
+            y: -3.25
+            under: true
+
+            progress: warmup
+            moveY: 8.5
+
+            moves: [
+                {
+                    type: DrawPart$PartMove
+                    progress: recoil
+                    y: -1.4
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: "-front"
+            mirror: true
+            under: true
+
+            progress: warmup
+            moveX: 2.7
+            moveY: -0.9
+            moveRot: -45
+        }
+        
+    ]
+}
+
+//TechTree
+alwaysUnlocked: true
+
+research: {
+    parent: fragment
+}
+researchCost: [
+    hematite/275
+    nickel/250
+    silicon/120
+]
