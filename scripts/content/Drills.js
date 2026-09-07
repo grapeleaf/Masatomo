@@ -176,13 +176,6 @@ wallCrusher.buildType = () => extend(WallCrafter.WallCrafterBuild, wallCrusher, 
 
         Draw.rect(b.topRegion, this.x, this.y, this.rotdeg());
 
-        // Drawf.additive(
-        //     b.glowRegion,
-        //     Tmp.c2.set(Color.white).mulA(Mathf.pow(this.smoothProgress, 3) * Color.white.a),
-        //     this.x,
-        //     this.y,
-        // )
-
         Tmp.c2.set(b.glowColor)//.mulA(Mathf.pow(this.smoothProgress, 3) * Color.white.a),
         Tmp.c2.a = Mathf.pow(this.smoothProgress, 3) * Color.white.a;
 
