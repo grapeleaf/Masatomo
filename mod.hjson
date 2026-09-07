@@ -1,7 +1,10 @@
 name: "masatomo"
 displayName: "Masatomo"
 author: GrapeLeaf
-description: "Bbfashbjhcbabfhsbafbhajbf"
+description:
+"
+Adds a new planet, Masatomo with a semi-Erekir like campaign.
+"
 version: "1.0"
 minGameVersion: "159.7"
 dependencies: [ ]
