@@ -1,9 +1,13 @@
+//Stat
 captureWave: 10
 difficulty: 1
+sector: 11
+
+//Tech Tree
 planet: masatomo
-sector: 4
 
 research: core-chamber
+alwaysUnlocked: true
 
 
 // //March

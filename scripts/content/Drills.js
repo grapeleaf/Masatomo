@@ -1,4 +1,13 @@
 //Burst Wall Drill
+var DrillWave = extend(WaveEffect, {
+    sizeFrom: 0.2,
+    sizeTo: 20,
+    lifetime: 30,
+    strokeFrom: 1.1,
+    strokeTo: 0.2,
+    colorFrom: Color.valueOf("feb380"),
+    colorTo: Color.valueOf("feb380"),
+})
 const wallCrusher = extend(WallCrafter, "wall-crusher", {
     glowRegion: null,
 
@@ -113,7 +122,7 @@ wallCrusher.buildType = () => extend(WallCrafter.WallCrafterBuild, wallCrusher, 
     smoothProgress: 0,
     drillSound: Sounds.drillImpact,
     steamEffet: Fx.drillSteam,
-    drillEffect: [Fx.mineBig],
+    drillEffect: [Fx.mineBig, DrillWave],
 
     updateTile(){
         this.time += this.edelta() * this.efficiency;
