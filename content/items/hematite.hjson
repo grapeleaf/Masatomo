@@ -4,7 +4,7 @@ cost: 0.5
 flammability: 0
 explosiveness: 0
 radioactivity: 0
-hardness: 1
+hardness: 3
 color: b3645f
 
 alwaysUnlocked: true

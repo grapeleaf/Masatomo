@@ -1,8 +1,8 @@
 localizedName: "Hydraulic Drill"
-
+description: "When placed on ore, outputs items in bursts indefinitely."
 // Drill Stats
 type: BurstDrill
-tier: 2
+tier: 3
 drillTime: 450
 hardnessDrillMultiplier: 50
 size: 3
@@ -20,18 +20,18 @@ squareSprite: false
 glowColor: ffffff
 
 drillEffect: [
-    drillSteam,
-    mineImpact,
-    {
-        type: WaveEffect
-        sizeFrom: 0.1
-        sizeTo: 25
-        strokeFrom: 1.1
-        strokeTo: 0.2
-        colorFrom: ffffff
-        colorTo: ffecc2
-        lifetime: 30
-    }
+    // drillSteam,
+    // mineImpact,
+    // {
+    //     type: WaveEffect
+    //     sizeFrom: 0.1
+    //     sizeTo: 25
+    //     strokeFrom: 1.1
+    //     strokeTo: 0.2
+    //     colorFrom: ffffff
+    //     colorTo: ffecc2
+    //     lifetime: 30
+    // }
 ]
 
 //Tech Tree

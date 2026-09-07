@@ -5,7 +5,7 @@ flammability: 0
 explosiveness: 0
 radioactivity: 0
 charge: 1
-hardness: 1
+hardness: 3
 color: cf885f
 
 alwaysUnlocked: true
