@@ -1,3 +1,35 @@
+//Hydraulic Drill
+const hydraulicDrill = extend(BurstDrill, "hydraulic-drill", {
+    pistonRegion: null,
+
+    load(){
+        this.super$load();
+        this.pistonRegion = Core.atlas.find(this.name + "-piston")
+    },
+
+    icons(){
+        return [this.region, this.pistonRegion];
+    },
+})
+hydraulicDrill.buildType = () => extend(BurstDrill.BurstDrillBuild, hydraulicDrill, {
+    draw(){
+        this.super$draw();
+        let b = hydraulicDrill
+        let bfract = Mathf.lerpDelta(0.26, 0.36, Mathf.pow(this.smoothProgress,3))
+
+        Draw.color(Pal.shadow, Pal.shadow.a)
+        Draw.rect(b.pistonRegion, this.x - (bfract - 0.26) * 40, this.y - (bfract - 0.26) * 40, b.pistonRegion.width * bfract, b.pistonRegion.height * bfract) 
+        
+        Draw.z(Layer.blockAdditive)
+        Draw.color()
+        Draw.rect(b.pistonRegion, this.x, this.y, b.pistonRegion.width * bfract, b.pistonRegion.height * bfract)
+
+        Draw.color(this.dominantItem.color);
+        Draw.rect(b.itemRegion, this.x , this.y, b.pistonRegion.width * bfract, b.pistonRegion.height * bfract);
+        Draw.color();
+    },
+})
+
 //Burst Wall Drill
 var DrillWave = extend(WaveEffect, {
     sizeFrom: 0.2,

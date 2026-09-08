@@ -1,5 +1,5 @@
 localizedName: "Pulverizer"
-description: "When placed facing a valid wall, outputs items in bursts indefinitely. Requires small amounts of power."
+description: "When placed facing a valid wall, outputs items in bursts indefinitely.\nRequires power."
 category: production
 size: 2
 

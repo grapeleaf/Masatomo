@@ -1,5 +1,5 @@
 localizedName: "Silicon Arc Dissolver"
-description: "Separates Quartz to produce Silicon and Oxygen Gas"
+description: "Produces silion from quartz.\nRequires power."
 
 //Stat
 type: GenericCrafter

@@ -1,0 +1,7 @@
+type: StaticWall
+name: Sulfuric Wall
+variants: 3
+
+itemDrop: sulfur
+attributes: {
+}

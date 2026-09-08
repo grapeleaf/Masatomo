@@ -1,0 +1,7 @@
+type: Floor
+name: Sulfuric Rock
+variants: 5
+
+attributes: {
+    water: -1
+}

@@ -1,7 +1,6 @@
 localizedName: "Hydraulic Drill"
 description: "When placed on ore, outputs items in bursts indefinitely."
 // Drill Stats
-type: BurstDrill
 tier: 3
 drillTime: 450
 hardnessDrillMultiplier: 50
@@ -17,7 +16,7 @@ requirements: [
 shake: 4
 drawArrow: false
 squareSprite: false
-glowColor: ffffff
+glowColor: fc8e6c
 
 drillEffect: [
     drillSteam,

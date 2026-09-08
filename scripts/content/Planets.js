@@ -1,5 +1,5 @@
 const MasatomoPlanetGenerator = extend(PlanetGenerator, {
-    scale: 2,
+    scale: 2.5,
     octaves: 8,
     persistence: 0.7,
     heightPow: 2,
@@ -18,8 +18,7 @@ const MasatomoPlanetGenerator = extend(PlanetGenerator, {
         let slag = Blocks.slag;
         let volcanicBasalt = Vars.content.block("masatomo-volcanic-basalt-wall");
         let basalt = Vars.content.block("masatomo-basalt-wall");
-        let sinter = Vars.content.block("masatomo-sinter-wall");
-        let sulfur = Blocks.regolithWall;  //temporary
+        let sulfur = Vars.content.block("masatomo-sulfuric-wall");
         let feldspar = Vars.content.block("masatomo-feldspar-wall");
 
         //biome diagram, should probably use erekirs method and not serpulo
@@ -32,9 +31,9 @@ const MasatomoPlanetGenerator = extend(PlanetGenerator, {
             [slag, slag, basalt, slag, slag, sulfur, sulfur, feldspar],
             [slag, volcanicBasalt, feldspar, basalt, sulfur, feldspar, feldspar, feldspar],
             [basalt, feldspar, basalt, sulfur, feldspar, feldspar, feldspar, feldspar],
-            [feldspar, basalt, sulfur, sinter, feldspar, feldspar, feldspar, feldspar],
+            [feldspar, basalt, sulfur, basalt, feldspar, feldspar, feldspar, feldspar],
             [basalt, sulfur, sulfur, feldspar, feldspar, feldspar, feldspar, feldspar],
-            [sulfur, sinter, feldspar, feldspar, feldspar, feldspar, feldspar, feldspar],
+            [sulfur, basalt, feldspar, feldspar, feldspar, feldspar, feldspar, feldspar],
         ];
 
         let height = this.rawHeight(position);
@@ -84,6 +83,7 @@ const masatomo = extend(Planet, "masatomo", Planets.sun, 1,2, {
 
        this.alwaysUnlocked = true;
        this.atmosphereColor = Color.valueOf("6c6009").mulA(0.5)
+       this.landCloudColor = Color.valueOf("ed6542")
        this.defaultEnv = Env.scorching | Env.terrestrial;
        this.startSector = 11;
        this.atmosphereRadIn = 0.02;
