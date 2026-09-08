@@ -1,0 +1,106 @@
+localizedName: "Broker"
+description: "Defends the core, capable of building and mining"
+
+type: flying
+flying: true 
+lowAltitude: true
+
+mineFloor: true
+mineWalls: false 
+mineTier: 3
+
+envDisabled: 0
+
+//Stat
+health: 450
+armor: 3
+hitSize: 7
+
+speed: 4.5
+rotateSpeed: 15
+accel: 0.03
+drag: 0.05
+buildSpeed: 1
+mineSpeed: 10
+
+range: 50
+faceTarget: true
+targetPriority: -1
+
+itemCapacity: 45
+isEnemy: false
+
+//Visual
+lowAltitude: true
+buildBeamOffset: 4
+mineBeamOffset: 4
+engineOffset: 6
+
+outlineColor: 1d1d23
+
+//Tech Tree
+research: core-chamber
+
+//Weapon
+weapons: [
+    {
+        x: 0
+        y: 2
+        reload: 120
+        shootSound: shootMissileLong
+        shoot: {
+            type: ShootSpread
+            shots: 2
+            spread: 8
+        }
+        recoil: 2.5
+        recoilPow: 2
+        
+        bullet: {
+            type: ArtilleryBulletType
+
+            collidesAir: true
+            collidesGround: true
+
+            speed: 3
+            lifetime: 60
+            damage: 100
+            splashDamage: 30
+            splashDamageRadius: 30
+            buildingDamageMultiplier: 0.12
+
+            hitSize: 6
+            width: 10
+            height: 13
+
+            trailWidth: 2
+            trailLength: 10
+
+            shootEffect: shootSmokeSquareSparse
+            smokeEffect: shootSmokeSquare
+
+            hitColor: ffb168ff
+            backColor: ffb168ff
+
+            hitEffect: {
+                type: ExplosionEffect
+                lifetime: 25
+
+                waveColor: ffb168ff
+                sparkColor: ffdc90ff
+
+                waveStroke: 1
+                waveRad: 15
+                waveRadBase: 8
+                waveLife: 30
+
+                sparks: 6
+                sparkRad: 25
+                sparkLen: 3
+                sparkStroke: 1.2
+
+                smokes: 0
+            }
+        }
+    }
+]

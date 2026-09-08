@@ -1,0 +1,31 @@
+localizedName: "Pulverizer"
+description: "When placed facing a valid wall, outputs items in bursts indefinitely. Requires small amounts of power."
+category: production
+size: 2
+
+// Drill Stats
+drillTime: 200
+itemCapacity: 20
+
+consumes: {
+    power: 0.5
+}
+requirements: [
+    hematite/25
+]
+
+//Tech Tree
+category: production
+research: {
+    parent: hydraulic-drill
+     objectives: [
+        {
+            type: Research
+            content: thermogenerator
+        }
+     ]
+}
+researchCost: [
+    hematite/100
+    nickel/75
+]

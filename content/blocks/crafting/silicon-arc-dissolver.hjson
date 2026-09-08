@@ -1,0 +1,64 @@
+localizedName: "Silicon Arc Dissolver"
+description: "Separates Quartz to produce Silicon and Oxygen Gas"
+
+//Stat
+type: GenericCrafter
+size: 3
+requirements: [
+    hematite/75
+    nickel/75
+    quartz/30
+]
+consumes: {
+    power: 1.5
+    items: [
+        quartz/4
+    ]
+}
+outputItem: msilicon/3
+
+ignoreLiquidFullness: true
+
+craftTime: 90
+
+//Visual
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawCrucibleFlame
+    }
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawGlowRegion
+        suffix: "-glow"
+        color: fc8e6c
+    }
+  ]
+}
+
+//Tech Tree
+//alwaysUnlocked: true
+
+category: crafting
+research: {
+    parent: hydraulic-drill
+    objectives: [
+        {
+            type: Research
+            content: thermogenerator
+        }
+    ]
+}
+researchCost: [
+    hematite/150
+    nickel/150
+    quartz/50
+]

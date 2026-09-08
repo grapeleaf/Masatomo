@@ -1,0 +1,30 @@
+localizedName: "Shielded Conveyor"
+
+//Stat
+type: Conveyor
+health: 120
+
+speed: 0.1
+displayedSpeed: 14
+
+itemCapacity: 3
+buildCostMultiplier: 2
+
+pushUnits: false
+
+bridgeReplacement: transport-bridge
+junctionReplacement: shielded-junction
+requirements: [
+    hematite/1
+]
+
+//Tech Tree
+//alwaysUnlocked: true
+
+category: distribution
+research: {
+    parent: core-chamber
+}
+researchCost: [
+    hematite/5
+]

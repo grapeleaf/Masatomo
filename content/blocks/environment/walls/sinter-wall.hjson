@@ -1,0 +1,6 @@
+type: StaticWall
+name: Sinter Wall
+variants: 2
+
+attributes: {
+}

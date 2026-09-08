@@ -1,0 +1,7 @@
+type: Floor
+name: Rough Basalt
+variants: 4
+
+attributes: {
+    water: -1
+}

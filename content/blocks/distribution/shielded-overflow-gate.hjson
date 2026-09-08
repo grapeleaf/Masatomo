@@ -1,0 +1,29 @@
+localizedName: "Shielded Overflow Gate"
+description: "Only outputs items to the sides if the front path is blocked."
+
+type: OverflowDuct
+category: distribution
+
+//Stat
+health: 120
+speed: 4.2857
+solid: false
+
+requirements: [
+    hematite/12
+    nickel/12
+]
+
+//Visual
+squareSprite: false
+
+//Tech Tree
+//alwaysUnlocked: true
+
+research: {
+    parent: shielded-conveyor
+}
+researchCost: [
+    hematite/25
+    nickel/25
+]

@@ -1,0 +1,48 @@
+localizedName: "Hydraulic Drill"
+description: "When placed on ore, outputs items in bursts indefinitely."
+// Drill Stats
+type: BurstDrill
+tier: 3
+drillTime: 450
+hardnessDrillMultiplier: 50
+size: 3
+itemCapacity: 20
+
+requirements: [
+    hematite/25
+]
+
+
+//Visual
+shake: 4
+drawArrow: false
+squareSprite: false
+glowColor: ffffff
+
+drillEffect: [
+    drillSteam,
+    mineImpact,
+    {
+        type: WaveEffect
+        sizeFrom: 0.1
+        sizeTo: 25
+        strokeFrom: 1.1
+        strokeTo: 0.2
+        colorFrom: feb380
+        colorTo: bc5452
+        lifetime: 30
+    }
+]
+
+//Tech Tree
+alwaysUnlocked: true
+
+category: production
+research: {
+    parent: core-chamber
+}
+researchCost: [
+    hematite/20
+]
+
+

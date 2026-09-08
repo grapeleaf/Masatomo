@@ -1,0 +1,12 @@
+localizedName: Ferronickel
+
+cost: 1.5
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+hardness: 0
+color: 6c6a7c
+
+//alwaysUnlocked: true
+research: nickel
+shownPlanets: [masatomo]

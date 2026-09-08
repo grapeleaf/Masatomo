@@ -1,0 +1,2 @@
+- Make props doofus
+- Work on second sector

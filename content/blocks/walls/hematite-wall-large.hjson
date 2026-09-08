@@ -1,0 +1,28 @@
+localizedName: "Large Hematite Wall"
+description: "Protects structures from enemy assault."
+
+solid: true
+type: Wall
+category: defense
+
+//Stat
+size: 2
+scaledHealth: 300
+armor: 3
+
+requirements: [
+  hematite/30
+]
+
+//Visual
+squareSprite: false
+
+//Tech Tree
+alwaysUnlocked: true
+
+research: {
+    parent: hematite-wall-small
+}
+researchCost: [
+    hematite/225
+]

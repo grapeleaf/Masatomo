@@ -1,0 +1,28 @@
+localizedName: "Shielded Junction"
+description: "Acts as a bridge for two crossing conveyor belts."
+
+type: Junction
+category: distribution
+
+//Stat
+health: 120
+speed: 0.1
+displayedSpeed: 14
+solid: false
+
+requirements: [
+    hematite/8
+]
+
+//Visual
+squareSprite: true
+
+//Tech Tree
+//alwaysUnlocked: true
+
+research: {
+    parent: shielded-router
+}
+researchCost: [
+    hematite/25
+]

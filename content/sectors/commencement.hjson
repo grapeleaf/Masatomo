@@ -1,0 +1,27 @@
+//Stat
+captureWave: 10
+difficulty: 1
+sector: 11
+
+//Tech Tree
+planet: masatomo
+
+research: core-chamber
+alwaysUnlocked: true
+
+
+// //March
+// captureWave: 15
+// difficulty: 1
+// planet: masatomo
+// sector: 69
+
+// research: {
+//     parent: commencement
+//     objectives: [
+//         {
+//             type: SectorComplete
+//             preset: commencement
+//         }
+//     ]
+// }

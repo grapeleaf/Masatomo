@@ -1,0 +1,10 @@
+localizedName: Oxygen
+
+gas: true
+explosiveness: 0.25
+flammability: 0
+color: 9dbec2
+
+//alwaysUnlocked: true
+research: quartz
+shownPlanets: [masatomo]
