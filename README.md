@@ -1,6 +1,9 @@
 <div align = center>
 
-![Logo](main/sprites/ui/logo.png)
+![Logo](sprites/ui/logo.png)
+
+<div>
+
 ![Static Badge](https://img.shields.io/badge/State-Alpha-orange?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/grapeleaf/Masatomo?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Mindustry-v159-green?style=for-the-badge)
