@@ -34,7 +34,7 @@ drillEffect: [
 ]
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 category: production
 research: {

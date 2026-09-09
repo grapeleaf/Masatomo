@@ -6,8 +6,9 @@ sector: 11
 //Tech Tree
 planet: masatomo
 
-research: core-chamber
 alwaysUnlocked: true
+research: core-chamber
+
 
 // //March
 // captureWave: 15

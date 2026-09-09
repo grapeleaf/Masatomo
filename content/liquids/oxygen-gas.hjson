@@ -6,5 +6,5 @@ flammability: 0
 color: 9dbec2
 
 //alwaysUnlocked: true
-research: quartz
-shownPlanets: [masatomo]
+// research: quartz
+// shownPlanets: [masatomo]

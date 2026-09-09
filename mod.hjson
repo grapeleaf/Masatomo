@@ -12,5 +12,11 @@ dependencies: [ ]
 hidden: false
 
 contentOrder: [
-    shielded-conveyor
+    shielded-conveyor,
+    hydraulic-drill,
+    thermogenerator,
+    fragment,
+    assault-synthesizer,
+    commencement,
+    hematite,
 ]

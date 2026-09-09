@@ -16,7 +16,7 @@ requirements: [
 squareSprite: false
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 research: {
     parent: hematite-wall-small

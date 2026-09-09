@@ -42,7 +42,7 @@ drawer: {
 //alwaysUnlocked: true
 
 research: {
-    parent: hydraulic-drill
+    parent: core-chamber
 }
 researchCost: [
     hematite/100

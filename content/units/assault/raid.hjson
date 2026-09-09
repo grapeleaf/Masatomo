@@ -1,5 +1,5 @@
 localizedName: "Raid"
-description: "The primary assault unit. Fires dual armor-piercing bullets at enemies. Cannot walk over solid blocks"
+description: "Fires dual standard bullets at enemies.\nCannot walk over solid blocks"
 
 envDisabled: 0
 
@@ -78,7 +78,6 @@ weapons: [
             speed: 3
             lifetime: 40
             damage: 30
-            armorMultiplier: 0.86
 
             hitSize: 4
             width: 8
@@ -113,8 +112,18 @@ weapons: [
 ]
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 research: {
     parent: assault-synthesizer
+    objectives: [
+        {
+            type: Research
+            content: assault-synthesizer
+        }
+        {
+            type: Research
+            content: silicon
+        }
+    ]
 }
