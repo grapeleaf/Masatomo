@@ -2,7 +2,6 @@ localizedName: "Ferronickel Forge"
 description: "Flash smelts hematite and nickel into ferronickel using oxygen"
 
 //Stat
-type: GenericCrafter
 size: 3
 requirements: [
     hematite/120
@@ -15,7 +14,6 @@ consumes: {
         hematite/3
         nickel/2
     ]
-    liquid: oxygen-gas/0.05
 }
 outputItem: ferronickel/5
 

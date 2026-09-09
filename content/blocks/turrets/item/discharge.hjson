@@ -1,5 +1,4 @@
 localizedName: "Discharge"
-type: ItemTurret
 description: "Fires a rapid stream of bullets at enemies, excellent against swarms."
 
 category: turret

@@ -1,5 +1,9 @@
-//Assault Units
+//Unit Blocks
+const assaultSynthesizer = extend(UnitFactory,"assault-synthesizer",{})
+const breachSynthesizer = extend(UnitFactory,"breach-synthesizer",{})
+const siegeSynthesizer = extend (UnitFactory,"siege-synthesizer",{})
 
+//Assault Units
 const raid = extend(UnitType, "raid", {
     init() {
         this.super$init();

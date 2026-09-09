@@ -116,5 +116,5 @@ weapons: [
 alwaysUnlocked: true
 
 research: {
-    parent: core-chamber
+    parent: assault-synthesizer
 }

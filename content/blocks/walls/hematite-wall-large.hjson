@@ -1,8 +1,6 @@
 localizedName: "Large Hematite Wall"
 description: "Protects structures from enemy assault."
 
-solid: true
-type: Wall
 category: defense
 
 //Stat

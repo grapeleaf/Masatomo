@@ -1,7 +1,6 @@
 localizedName: "Shielded Junction"
 description: "Acts as a bridge for two crossing conveyor belts."
 
-type: Junction
 category: distribution
 
 //Stat

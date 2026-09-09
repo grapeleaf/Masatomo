@@ -1,7 +1,6 @@
 localizedName: "Shielded Router"
 description: "Distributes items equally across three directions. Only accepts items from the back side. Can be configured as an item sorter."
 
-type: DuctRouter
 category: distribution
 
 //Stat

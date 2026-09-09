@@ -10,3 +10,7 @@ version: "1.0"
 minGameVersion: "159.7"
 dependencies: [ ]
 hidden: false
+
+contentOrder: [
+    shielded-conveyor
+]

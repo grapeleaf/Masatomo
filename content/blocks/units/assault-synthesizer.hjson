@@ -1,0 +1,48 @@
+localizedName: "Assault Synthesizer"
+description: "Constructs basic Assault units.\nOutputted units can be used directly, or moved into a resynthesizer for upgrading."
+
+size: 3
+category: units
+
+//Stat
+scaledHealth: 60
+hasPower: true
+hasItems: true
+
+requirements: [
+    ferronickel/150
+    msilicon/175
+]
+
+consumes: {
+    power: 2
+}
+
+plans: [
+    {
+        type: FactoryUnitPlan
+        unit: raid
+        requirements: [
+            nickel/50
+            msilicon/40
+        ]
+    }
+]
+
+//Visual
+squareSprite: false
+
+//Research
+research: {
+    parent: core-chamber
+    // objectives: [
+    //     {
+    //         type: OnSector
+    //         preset: march
+    //     }
+    // ]
+}
+researchCost: [
+    ferronickel/250
+    msilicon/200
+]

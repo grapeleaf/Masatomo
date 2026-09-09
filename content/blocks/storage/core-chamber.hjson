@@ -1,5 +1,4 @@
-type: CoreBlock
-name: Core: Chamber
+localizedName: Core: Chamber
 description: Core of the base. Once destroyed, the sector is lost. 
 
 category: effect

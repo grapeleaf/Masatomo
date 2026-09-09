@@ -1,7 +1,6 @@
 localizedName: "Shielded Underflow Gate"
 description: "Opposite of an overflow duct. Outputs to the front if the left and right paths are blocked."
 
-type: OverflowDuct
 category: distribution
 
 //Stat

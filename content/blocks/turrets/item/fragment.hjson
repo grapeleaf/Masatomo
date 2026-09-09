@@ -1,5 +1,4 @@
 localizedName: "Fragment"
-type: ItemTurret
 description: "Fires a spread of fragmented shards, excels at single target damage."
 
 category: turret

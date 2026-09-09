@@ -1,7 +1,6 @@
 localizedName: "Hematite Wall"
 description: Protects structures from incoming damage.
 
-type: Wall
 category: defense
 
 //Stat

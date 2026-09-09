@@ -1,0 +1,51 @@
+localizedName: "Siege Synthesizer"
+description: "Constructs basic Siege units.\nOutputted units can be used directly, or moved into a resynthesizer for upgrading."
+
+size: 3
+category: units
+
+//Stat
+scaledHealth: 60
+hasPower: true
+hasItems: true
+
+requirements: [
+    ferronickel/200
+    msilicon/250
+    //qanetite/75
+]
+
+consumes: {
+    power: 2
+}
+
+plans: [
+    {
+        type: FactoryUnitPlan
+        //temporary
+        unit: stell 
+        requirements: [
+            ferronickel/50
+            msilicon/40
+            //qanetite/20
+        ]
+    }
+]
+
+//Visual
+squareSprite: false
+
+//Research
+research: {
+    parent: breach-synthesizer
+    // objectives: [
+    //     {
+    //         type: OnSector
+    //         preset: march
+    //     }
+    // ]
+}
+researchCost: [
+    ferronickel/250
+    msilicon/200
+]

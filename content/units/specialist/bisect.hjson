@@ -91,5 +91,5 @@ drawBody: false
 alwaysUnlocked: true
 
 research: {
-    parent: core-chamber
+    parent: breach-synthesizer
 }

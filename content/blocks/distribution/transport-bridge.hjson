@@ -1,7 +1,6 @@
 localizedName: "Transport Bridge"
 description: "Moves items over structures and terrain."
 
-type: DuctBridge
 category: distribution
 
 //Stat

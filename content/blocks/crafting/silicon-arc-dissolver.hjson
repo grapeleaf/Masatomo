@@ -2,7 +2,6 @@ localizedName: "Silicon Arc Dissolver"
 description: "Produces silion from quartz.\nRequires power."
 
 //Stat
-type: GenericCrafter
 size: 3
 requirements: [
     hematite/75

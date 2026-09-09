@@ -259,5 +259,5 @@ parts: [
 alwaysUnlocked: true
 
 research: {
-    parent: core-chamber
+    parent: raid
 }

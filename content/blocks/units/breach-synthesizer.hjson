@@ -1,0 +1,48 @@
+localizedName: "Breach Synthesizer"
+description: "Constructs basic Breach units.\nOutputted units can be used directly, or moved into a resynthesizer for upgrading."
+
+size: 3
+category: units
+
+//Stat
+scaledHealth: 60
+hasPower: true
+hasItems: true
+
+requirements: [
+    ferronickel/200
+    msilicon/250
+]
+
+consumes: {
+    power: 2
+}
+
+plans: [
+    {
+        type: FactoryUnitPlan
+        unit: bisect
+        requirements: [
+            sulfur/50
+            msilicon/40
+        ]
+    }
+]
+
+//Visual
+squareSprite: false
+
+//Research
+research: {
+    parent: assault-synthesizer
+    // objectives: [
+    //     {
+    //         type: OnSector
+    //         preset: march
+    //     }
+    // ]
+}
+researchCost: [
+    ferronickel/250
+    msilicon/200
+]

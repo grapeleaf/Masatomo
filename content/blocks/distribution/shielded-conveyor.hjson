@@ -1,7 +1,8 @@
 localizedName: "Shielded Conveyor"
+description: "Transports items forward."
+category: distribution
 
 //Stat
-type: Conveyor
 health: 120
 
 speed: 0.1
@@ -21,7 +22,6 @@ requirements: [
 //Tech Tree
 //alwaysUnlocked: true
 
-category: distribution
 research: {
     parent: core-chamber
 }
