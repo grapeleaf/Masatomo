@@ -12,8 +12,9 @@
 ### Adds a new planet, Masatomo. <br>
 ### A scorching and toxic planet with progression primarily based on the Erekir campaign.
 
+</div align = left>
+
 </div>
 
 > [!WARNING]
 > This mod is still heavily into early development.
-

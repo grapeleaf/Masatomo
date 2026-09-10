@@ -128,11 +128,13 @@ const masatomo = extend(Planet, "masatomo", Planets.sun, 1,2, {
 
         this.ruleSetter = (r) => {
             r.waveTeam = Team.green;
+            r.hideSpawns = false;
             r.fog = true;
             r.staticFog = true;
             r.coreDestroyClear = true;
         }
         this.campaignRuleDefaults.rtsAI = true;
+        this.campaignRuleDefaults.hideSpawns = false;
         this.campaignRuleDefaults.clearSectorOnLose = true;
 
         this.unlockedOnLand.add(Vars.content.block("masatomo-core-chamber"));

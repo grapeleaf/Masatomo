@@ -38,23 +38,25 @@ engineOffset: 6
 
 outlineColor: 1d1d23
 
-//Tech Tree
-//research: core-chamber
-
 //Weapon
 weapons: [
     {
         x: 0
         y: 2
-        reload: 120
+        baseRotation: -20
+
+        recoil: 0
+        reload: 60
+        cooldownTime: 10
+
+        minWarmup: 0.2
+        alternate: false
+
+        shootCone: 90
         shootSound: shootMissileLong
         shoot: {
-            type: ShootSpread
-            shots: 2
-            spread: 8
+            firstShotDelay: 15
         }
-        recoil: 2.5
-        recoilPow: 2
         
         bullet: {
             type: ArtilleryBulletType
@@ -64,14 +66,17 @@ weapons: [
 
             speed: 3
             lifetime: 60
-            damage: 100
+            damage: 50
             splashDamage: 30
-            splashDamageRadius: 30
+            splashDamageRadius: 50
             buildingDamageMultiplier: 0.12
 
             hitSize: 6
             width: 10
             height: 13
+
+            homingPower: 0.2
+            homingDelay: 5
 
             trailWidth: 2
             trailLength: 10
@@ -104,3 +109,7 @@ weapons: [
         }
     }
 ]
+
+//Tech Tree
+alwaysUnlocked: true
+//research: core-chamber
