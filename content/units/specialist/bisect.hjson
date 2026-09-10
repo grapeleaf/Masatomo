@@ -1,5 +1,5 @@
 localizedName: "Bisect"
-description: "Breaches defenses by trampling over them, explodes into a spread of piercing bullets on death. Can walk over most terrain."
+description: "Breaches defenses by trampling over them, explodes into a spread of piercing bullets on death.\nCan walk over most terrain."
 
 type:crawl
 circleTarget: true
@@ -88,8 +88,14 @@ drawBody: false
 
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 research: {
     parent: breach-synthesizer
+    objectives: [
+        {
+            type: Research
+            content: breach-synthesizer
+        }
+    ]
 }

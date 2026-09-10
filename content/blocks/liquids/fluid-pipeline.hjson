@@ -18,11 +18,11 @@ underBullets: true
 botColor: 1d1d23
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
-research: {
-    parent: core-chamber
-}
-researchCost: [
-    quartz/35
-]
+// research: {
+//     parent: core-chamber
+// }
+// researchCost: [
+//     quartz/35
+// ]

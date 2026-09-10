@@ -39,7 +39,7 @@ engineOffset: 6
 outlineColor: 1d1d23
 
 //Tech Tree
-research: core-chamber
+//research: core-chamber
 
 //Weapon
 weapons: [

@@ -3,6 +3,7 @@ description: "Constructs basic Assault units.\nOutputted units can be used direc
 
 size: 3
 category: units
+configurable: false
 
 //Stat
 scaledHealth: 60
@@ -26,6 +27,7 @@ plans: [
             nickel/50
             msilicon/40
         ]
+        time: 1800
     }
 ]
 
@@ -38,7 +40,7 @@ research: {
     // objectives: [
     //     {
     //         type: OnSector
-    //         preset: march
+    //         preset: commencement
     //     }
     // ]
 }

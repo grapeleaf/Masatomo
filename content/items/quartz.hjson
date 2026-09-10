@@ -7,6 +7,6 @@ radioactivity: 0
 hardness: 2
 color: fff4d7
 
-alwaysUnlocked: true
+//alwaysUnlocked: true
 research: nickel
 shownPlanets: [masatomo]

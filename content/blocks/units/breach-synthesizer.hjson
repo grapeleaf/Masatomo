@@ -26,6 +26,7 @@ plans: [
             sulfur/50
             msilicon/40
         ]
+        time: 1800
     }
 ]
 

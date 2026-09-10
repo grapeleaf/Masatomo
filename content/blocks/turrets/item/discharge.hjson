@@ -113,7 +113,7 @@ drawer: {
 }
 
 //TechTree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 research: {
     parent: fragment

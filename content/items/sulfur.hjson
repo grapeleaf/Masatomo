@@ -1,4 +1,4 @@
-localizedName: Quartz
+localizedName: Sulfur
 
 cost: 0.5
 explosiveness: 0
@@ -7,6 +7,6 @@ radioactivity: 0
 hardness: 2
 color: ffff4c
 
-alwaysUnlocked: true
-research: nickel
+//alwaysUnlocked: true
+research: quartz
 shownPlanets: [masatomo]

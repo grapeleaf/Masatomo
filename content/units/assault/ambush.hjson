@@ -1,5 +1,5 @@
 localizedName: "Ambush"
-description: "The primary assault unit. Fires dual piercing bullets at enemies. Cannot walk over solid blocks."
+description: "Fires dual standard bullets and piercing orbs at enemies.\nCannot walk over solid blocks."
 
 envDisabled: 0
 
@@ -256,8 +256,14 @@ parts: [
 ]
 
 //Tech Tree
-alwaysUnlocked: true
+//alwaysUnlocked: true
 
 research: {
     parent: raid
+    objectives: [
+        {
+            type: Research
+            content: assault-synthesizer
+        }
+    ]
 }

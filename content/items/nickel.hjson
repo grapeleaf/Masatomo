@@ -8,6 +8,6 @@ charge: 1
 hardness: 3
 color: cf885f
 
-alwaysUnlocked: true
+//alwaysUnlocked: true
 research: hematite
 shownPlanets: [masatomo]
