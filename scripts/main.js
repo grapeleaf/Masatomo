@@ -4,9 +4,6 @@ require("content/Planets")
 require("content/Blocks")
 require("content/Turrets")
 
-/// CONSOLE UNLOCK TECH TREE IN MASATOMO !!!
-///Vars.content.each(c => { if(c instanceof UnlockableContent){ if(c.techNode != null && c.techNode.planet == Vars.content.planet("masatomo-masatomo")){Log.info(c)} } })
-
 Events.on(ClientLoadEvent, () => {
     //Icon code from Psammos! Thank you andromeda
     loadIcon(61106, "masatomo-team-green") // \uEEB2

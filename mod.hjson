@@ -17,6 +17,8 @@ contentOrder: [
     thermogenerator,
     fragment,
     assault-synthesizer,
+    breach-synthesizer,
+    siege-synthesizer,
     commencement,
     hematite,
 ]
