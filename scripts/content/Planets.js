@@ -24,13 +24,14 @@ const MasatomoPlanetGenerator = extend(PlanetGenerator, {
         let basalt = Vars.content.block("masatomo-basalt-wall");
         let sulfur = Vars.content.block("masatomo-sulfuric-wall");
         let feldspar = Vars.content.block("masatomo-feldspar-wall");
+        let sinter = Vars.content.block("masatomo-sinter-wall");
 
         //Erekir method of planet terrain
         let terrain = [slag, slag, slag, slag, slag, slag, volcanicBasalt, volcanicBasalt, slag, slag, volcanicBasalt, basalt, basalt, feldspar, basalt, sulfur, sulfur, sulfur, feldspar];
         
         let slagThres = 2.9;
-        let sulfurThres = 0.035;
-        let feldThres = 0.04;
+        let sulfurThres = 0.1;
+        let feldThres = 0.03;
 
         let px = position.x * this.scale;
         let py = position.y * this.scale;
@@ -55,11 +56,23 @@ const MasatomoPlanetGenerator = extend(PlanetGenerator, {
             res = feldspar;
         };
 
-        if(temp < slagThres - 0.3 && Ridged.noise3d(this.seed + 4, px + 2, py + 8, pz + 1, 3, 0.83) > sulfurThres){
+        if(temp < slagThres - 0.3 && Ridged.noise3d(this.seed + 9, px + 2, py + 8, pz + 1, 3, 0.83) > sulfurThres){
             res = sulfur;
         };
 
-        if(temp < 0.5){
+        if(temp < 2.5){
+            if(res == basalt || res == volcanicBasalt){
+                res = sulfur;
+            };
+        };
+
+        if(temp < 2 && Ridged.noise3d(this.seed + 3, px + 2, py + 8, pz + 1, 8, 0.83) > 0.01){
+            if(res == sulfur){
+                res = basalt
+            };
+        };
+
+         if(temp < 0.8){
             res = feldspar;
         };
 

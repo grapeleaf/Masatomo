@@ -11,10 +11,9 @@ research: core-chamber
 
 
 // //March
-// captureWave: 15
 // difficulty: 1
 // planet: masatomo
-// sector: 69
+// sector: 70
 
 // research: {
 //     parent: commencement
