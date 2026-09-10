@@ -121,5 +121,5 @@ research: {
 researchCost: [
     hematite/275
     nickel/250
-    silicon/120
+    msilicon/120
 ]

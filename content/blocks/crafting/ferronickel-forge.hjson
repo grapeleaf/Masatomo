@@ -49,6 +49,10 @@ category: crafting
 research: {
     parent: silicon-arc-dissolver
     objectives: [
+        {
+            type: Research
+            content: sulfur
+        }
     ]
 }
 researchCost: [

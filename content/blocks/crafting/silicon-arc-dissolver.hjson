@@ -48,7 +48,7 @@ drawer: {
 
 category: crafting
 research: {
-    parent: hydraulic-drill
+    parent: thermogenerator
     objectives: [
         {
             type: Research
