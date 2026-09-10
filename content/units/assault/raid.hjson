@@ -78,6 +78,7 @@ weapons: [
             speed: 3
             lifetime: 40
             damage: 30
+            armorMultiplier: 0.86
 
             hitSize: 4
             width: 8
