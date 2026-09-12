@@ -1,0 +1,7 @@
+type: Floor
+name: Sparse Sulfuric Rock
+variants: 3
+
+attributes: {
+    water: -1
+}

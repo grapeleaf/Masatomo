@@ -1,0 +1,7 @@
+localizedName: Sulfur Cluster
+type: TallBlock
+
+variants: 2
+clipSize: 128
+
+shadowAlpha: 0.5

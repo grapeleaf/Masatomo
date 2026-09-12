@@ -3,6 +3,7 @@ require("content/Drills")
 require("content/Planets")
 require("content/Blocks")
 require("content/Turrets")
+require("content/Items")
 
 Events.on(ClientLoadEvent, () => {
     //Icon code from Psammos! Thank you andromeda

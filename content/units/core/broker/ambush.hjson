@@ -1,0 +1,269 @@
+localizedName: "Ambush"
+description: "Fires dual standard bullets and piercing orbs at enemies.\nCannot walk over solid blocks."
+
+envDisabled: 0
+
+//Stat
+health: 1580
+armor: 12
+hitSize: 15
+
+speed: 0.5
+rotateSpeed: 3
+drag: 0.2
+
+faceTarget: true
+targetAir: true
+targetGround: true
+
+// if true and this is a legged unit, this unit can walk over blocks.
+allowLegStep: true
+
+//Visual
+outlineColor: 1d1d23
+
+//number of legs this unit has (must have the correct type to function!)
+legCount: 4
+//size of groups in which legs move. for example, insects (6 legs) usually move legs in groups of 3.
+legGroupSize: 2
+
+//If true, legs always try to move around even when the unit is not moving (leads to more natural behavior)
+legContinuousMove: true
+//If true, legs are locked to the base of the unit instead of being on an implicit rotating "mount".
+lockLegBase: true
+
+//for legs without "joints", this is how much the second leg sprite is moved "back" by, so it covers the joint region (it's hard to explain without an image)
+legExtension: -3
+//leg offset from the center of the unit
+legBaseOffset: 4.85
+//total length of a leg (both segments)
+legLength: 19
+//maximum length of an individual leg as fraction of real length
+legMaxLength: 1.2
+//minimum length of an individual leg as fraction of real length
+legMinLength: 0.8
+
+//scaling for how far away legs *try* to be from the body (not their actual length); e.g. if set to 0.5, legs will appear somewhat folded
+legLengthScl: 1
+//scale for how far in front (relative to unit velocity) legs try to place themselves; if legs lag behind a unit, increase this number
+legForwardScl: 0.8
+
+//scaling for space between leg movements, lower = shorter strides, higher = longer strides
+legMoveSpace: 1
+
+//Weapon
+weapons: [
+    {   
+        //Weap1
+        x: 0
+        y: -0.3
+
+        baseRotation: -15
+
+        recoil: 0
+        reload: 25
+        inaccuracy: 12
+        cooldownTime: 10
+
+        minWarmup: 0.2
+
+        heatColor: feb380
+        alternate: true
+
+        shootCone: 90
+        shootSound: explosionObviate
+        shoot: {
+            firstShotDelay: 15
+        }
+        
+        bullet: {
+            type: BasicBulletType
+            collidesAir: true
+            collidesGround: true
+
+            damage: 40
+
+            speed: 6
+            lifetime: 45
+            
+            homingPower: 0.2
+            homingDelay: 6
+
+            width: 6
+            height: 10
+
+            trailWidth: 2
+            trailLength: 10
+
+            shootEffect: [
+                colorSpark,
+                {
+                    type: WaveEffect
+                    sizeFrom: 0.3
+                    sizeTo: 30
+                    strokeFrom: 1.1
+                    strokeTo: 0.5
+                    colorFrom: feb380
+                    colorTo: ff5568
+                    lifetime: 20
+                }
+            ]
+            smokeEffect: shootSmokeSquare
+
+            despawnSound: explosionPlasmaSmall
+            despawnEffect: hitBulletColor
+
+            hitColor: feb380
+        }
+    }
+    {
+        //Weap2
+        mirror: false
+        x: 0
+        y: -0.3
+
+        recoil: 1.2
+        reload: 120
+        inaccuracy: 2
+        cooldownTime: 60
+
+        minWarmup: 0.2
+
+        heatColor: ff5568
+
+        shootSound: shootLancer
+        shoot: {
+            shots: 1
+            firstShotDelay: 90
+        }
+        bullet: {
+            type: BasicBulletType
+            collidesGround: true
+            collidesAir: false
+
+            damage: 180
+            armorMultiplier: 0.7
+
+            speed: 3
+
+            pierce: true
+            pierceBuilding: true
+            pierceCap: 3
+
+            lifetime: 80
+
+            width: 18
+            height: 25
+
+            weaveMag: 2
+            weaveScale: 6
+
+            trailLength: 2
+            trailWidth: 4
+
+            trailEffect: missileTrail
+            trailInterval: 2
+            trailParam: 3
+
+            sprite: large-orb
+            backColor: feb380
+            frontColor: ffe19f
+
+            trailColor: feb380
+
+            shootEffect: shootSmokeSquareBig
+            smokeEffect: sparkShoot
+
+            despawnSound: explosionArtilleryShock
+            despawnEffect: [
+                {
+                    type: ExplosionEffect
+                    waveStroke: 4
+                    waveRad: 40
+
+                    smokeColor: bc5452
+                    waveColor: feb380
+                    sparkColor: ffe19f
+                }
+            ]
+
+            hitColor: ffe19f
+        }
+    }
+]
+//Visual
+parts: [
+    {
+        type: ShapePart
+        layer: 110
+        layerOffset: 0.001
+
+        progress: warmup
+
+        x: 0
+        y: 1
+
+        circle: true
+        color: ffffff
+
+        sides: 4
+
+        stroke: 0
+        strokeTo: 1
+
+        radius: 0
+        radiusTo: 1.8
+
+        rotateSpeed: 1.8
+        
+    }
+    {
+        type: ShapePart
+        layer: 110
+
+        progress: warmup
+
+        x: 0
+        y: 1
+
+        circle: true
+        color: ffa56a
+
+        stroke: 0
+        strokeTo: 4.3
+
+        radius: 0
+        radiusTo: 3.2
+
+        rotateSpeed: 1.8
+        
+    }
+    {
+        type: RegionPart
+        suffix: "-fang"
+        x: -1
+
+        mirror: true
+        under: true
+
+        progress: warmup
+        moveRot: -15
+        moveX: 2
+        moveY: -0.5
+
+        heatColor: ffc549
+    }
+]
+
+//Tech Tree
+//alwaysUnlocked: true
+
+research: {
+    parent: raid
+    objectives: [
+        {
+            type: Research
+            content: assault-synthesizer
+        }
+    ]
+}

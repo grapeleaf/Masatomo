@@ -1,8 +1,10 @@
 localizedName: "Thermocouple Generator"
+description: "Generates power when placed on hot tiles.\nGets a small amount of extra efficiency from native heat."
 category: power
 
 //Stat
-powerProduction: 2
+// displayEfficiencyScale: 0.11111111111
+// powerProduction: 0.22222222222
 
 requirements: [
     hematite/175
@@ -10,7 +12,7 @@ requirements: [
 ]
 
 //Visual
-size: 2
+size: 3
 squareSprite: false
 
 ambientSound: loopHum

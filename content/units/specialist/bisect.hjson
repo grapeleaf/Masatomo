@@ -84,6 +84,7 @@ weapons: [
 ]
 
 //Visual
+outlineColor: 1d1d23
 drawBody: false
 
 

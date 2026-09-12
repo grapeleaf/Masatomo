@@ -14,11 +14,11 @@ consumes: {
         quartz/4
     ]
 }
-outputItem: msilicon/3
+outputItem: msilicon/4
 
 ignoreLiquidFullness: true
 
-craftTime: 90
+craftTime: 66.666
 
 //Visual
 squareSprite: false

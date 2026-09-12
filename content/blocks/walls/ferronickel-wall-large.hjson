@@ -5,8 +5,8 @@ category: defense
 
 //Stat
 size: 2
-scaledHealth: 700
-armor: 12
+scaledHealth: 250
+armor: 15
 
 requirements: [
   ferronickel/30

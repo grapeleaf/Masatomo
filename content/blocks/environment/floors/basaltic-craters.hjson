@@ -1,0 +1,8 @@
+type: Floor
+name: Basaltic Craters
+variants: 3
+
+blendGroup: basalt-floor
+attributes: {
+    water: -1
+}

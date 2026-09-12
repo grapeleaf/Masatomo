@@ -1,18 +1,19 @@
 localizedName: "Ferronickel Forge"
-description: "Flash smelts hematite and nickel into ferronickel using oxygen"
+description: "Smelts hematite and nickel into ferronickel.\nRequires power and sulfur as fuel."
 
 //Stat
 size: 3
 requirements: [
-    hematite/120
-    nickel/75
-    silicon/35
+    hematite/150
+    nickel/150
+    silicon/100
 ]
 consumes: {
-    power: 4
+    power: 3
     items: [
         hematite/3
-        nickel/2
+        nickel/3
+        sulfur/5
     ]
 }
 outputItem: ferronickel/5
@@ -21,6 +22,18 @@ craftTime: 75
 
 //Visual
 squareSprite: false
+ambientSound: loopSmelter
+ambientSoundVolume: 0.8
+
+craftEffect: [
+    {
+        type: RadialEffect
+        effect: surgeCruciSmoke
+        amount: 8
+        rotationSpacing: 45
+        lengthOffset: 5.5
+    }
+]
 drawer: {
   type: DrawMulti
   drawers: [
@@ -29,7 +42,10 @@ drawer: {
         suffix: "-bottom"
     }
     {
-        type: DrawCrucibleFlame
+        type: DrawBlurSpin
+        suffix: "-rotator"
+        rotateSpeed: 10
+        blurThresh: 0.03
     }
     {
         type: DrawDefault
@@ -37,7 +53,7 @@ drawer: {
     {
         type: DrawGlowRegion
         suffix: "-glow"
-        color: fc8e6c
+        color: ff9a55
     }
   ]
 }
@@ -57,6 +73,6 @@ research: {
 }
 researchCost: [
     hematite/175
-    nickel/120
-    silicon/25
+    nickel/175
+    silicon/75
 ]

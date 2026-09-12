@@ -1,4 +1,5 @@
 localizedName: "Power Pole"
+description: "Transmits power to connected nodes."
 size: 1
 
 category: power

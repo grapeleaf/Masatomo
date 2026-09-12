@@ -7,6 +7,6 @@ lightRadius: 60
 lightColor: fb8247
 
 attributes: {
-    heat: 0.25
+    heat: 1
     water: -1
 }

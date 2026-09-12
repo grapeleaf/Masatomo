@@ -1,12 +1,12 @@
 localizedName: "Ferronickel Wall"
-description: Protects structures from incoming damage.
+description: "Protects structures from enemy assault.\nHas high armor but low health."
 
 category: defense
 
 //Stat
 size: 1
-health: 700
-armor: 12
+health: 250
+armor: 15
 
 requirements: [
   ferronickel/6

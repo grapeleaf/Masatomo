@@ -1,0 +1,9 @@
+localizedName: Volcanic Basalt Vent
+type: SteamVent
+
+parent: volcanic-basalt-floor
+blendGroup: volcanic-basalt-floor
+
+attributes: {
+    heat: 2
+}

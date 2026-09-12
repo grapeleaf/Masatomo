@@ -1,0 +1,6 @@
+localizedName: Sulfur Rocks
+type: Prop
+
+variants: 3
+customShadow: true
+breakable: false

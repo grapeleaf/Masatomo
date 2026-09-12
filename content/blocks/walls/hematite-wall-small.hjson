@@ -1,12 +1,11 @@
 localizedName: "Hematite Wall"
-description: Protects structures from incoming damage.
+description: "Protects structures from enemy assault.\nHas high health but no armor."
 
 category: defense
 
 //Stat
 size: 1
 health: 500
-armor: 3
 
 requirements: [
   hematite/6

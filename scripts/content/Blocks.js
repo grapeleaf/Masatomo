@@ -12,7 +12,10 @@ const fluidPipeline = extend(ArmoredConduit, "fluid-pipeline",{})
 //Power
 const powerPole = extend(PowerNode, "power-pole",{})
 
-const thermoGenerator = extend(ThermalGenerator, "thermogenerator",{})
+const thermoGenerator = extend(ThermalGenerator, "thermogenerator",{
+    displayEfficiencyScale: 1/9,
+    powerProduction: 2/9,
+})
 
 //Crafting
 const siliconDissolver = extend(GenericCrafter, "silicon-arc-dissolver",{})

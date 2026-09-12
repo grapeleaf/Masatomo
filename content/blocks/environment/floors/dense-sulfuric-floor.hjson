@@ -1,8 +1,8 @@
 type: Floor
-name: Sulfuric Rock
+name: Dense Sulfuric Rock
 variants: 3
 
 attributes: {
-    heat: 0.25
+    heat: 0.5
     water: -1
 }

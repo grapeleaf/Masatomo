@@ -1,12 +1,11 @@
 localizedName: "Large Hematite Wall"
-description: "Protects structures from enemy assault."
+description: "Protects structures from enemy assault.\nHas high health but no armor."
 
 category: defense
 
 //Stat
 size: 2
-scaledHealth: 300
-armor: 3
+scaledHealth: 500
 
 requirements: [
   hematite/30
