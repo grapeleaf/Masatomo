@@ -19,7 +19,13 @@ const thermoGenerator = extend(ThermalGenerator, "thermogenerator",{
 
 //Crafting
 const siliconDissolver = extend(GenericCrafter, "silicon-arc-dissolver",{})
-const ferronickelForge = extend(GenericCrafter, "ferronickel-forge",{})
+const ferronickelForge = extend(HeatCrafter, "ferronickel-forge",{})
+const sulfurHeater = extend(HeatProducer, "sulfur-heater",{
+    setStats(){
+        this.super$setStats()
+        this.stats.remove(Stat.productionTime)
+    }
+})
 
 //Storage
 const coreChamber = extend(CoreBlock, "core-chamber",{})

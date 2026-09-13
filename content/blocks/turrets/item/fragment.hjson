@@ -51,7 +51,7 @@ ammoTypes: {
     hematite: {
         type: BasicBulletType
         buildingDamageMultiplier: 0.15
-        damage: 40
+        damage: 25
         speed: 5
 
         hitSize: 8

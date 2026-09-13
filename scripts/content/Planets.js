@@ -123,6 +123,7 @@ const masatomo = extend(Planet, "masatomo", Planets.sun, 1,2, {
         this.iconColor = Color.valueOf("f2ff30");
         this.allowLaunchToNumbered = false;
         this.updateLightning = false;
+        this.allowLaunchLoadout = false;
         
         this.defaultAttributes.set(Attribute.heat, 0.5);
 

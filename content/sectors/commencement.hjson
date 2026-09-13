@@ -8,19 +8,3 @@ planet: masatomo
 
 alwaysUnlocked: true
 research: core-chamber
-
-
-// //March
-// difficulty: 1
-// planet: masatomo
-// sector: 70
-
-// research: {
-//     parent: commencement
-//     objectives: [
-//         {
-//             type: SectorComplete
-//             preset: commencement
-//         }
-//     ]
-// }

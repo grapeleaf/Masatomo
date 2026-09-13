@@ -2,6 +2,7 @@ localizedName: "Raid"
 description: "Fires dual standard bullets at enemies.\nCannot walk over solid blocks"
 
 envDisabled: 0
+controller: GroundAI
 
 //Stat
 health: 650
@@ -128,3 +129,4 @@ research: {
         }
     ]
 }
+researchCostMultiplier: 0

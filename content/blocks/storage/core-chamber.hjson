@@ -10,7 +10,7 @@ requirements: [
 //Stat
 health: 3750
 itemCapacity: 3000
-unitCapModifier: 10
+unitCapModifier: 15
 unitType: broker
 
 //Visual

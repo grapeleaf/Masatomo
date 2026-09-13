@@ -16,7 +16,7 @@ health: 450
 armor: 3
 hitSize: 7
 
-speed: 4.5
+speed: 6
 rotateSpeed: 15
 accel: 0.03
 drag: 0.05

@@ -7,7 +7,7 @@ description:
 Adds a new planet, Masatomo with a semi-Erekir like campaign.
 "
 version: "1.0"
-minGameVersion: "160"
+minGameVersion: "160.2"
 dependencies: [ ]
 hidden: false
 

@@ -29,6 +29,7 @@ plans: [
             msilicon/40
             //qanetite/20
         ]
+        time: 1200
     }
 ]
 
@@ -36,16 +37,16 @@ plans: [
 squareSprite: false
 
 //Research
-research: {
-    parent: breach-synthesizer
-    // objectives: [
-    //     {
-    //         type: OnSector
-    //         preset: march
-    //     }
-    // ]
-}
-researchCost: [
-    ferronickel/250
-    msilicon/200
-]
+// research: {
+//     parent: breach-synthesizer
+//     // objectives: [
+//     //     {
+//     //         type: OnSector
+//     //         preset: march
+//     //     }
+//     // ]
+// }
+// researchCost: [
+//     ferronickel/250
+//     msilicon/200
+// ]

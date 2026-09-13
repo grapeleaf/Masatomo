@@ -1,6 +1,7 @@
 localizedName: "Ambush"
 description: "Fires dual standard bullets and piercing orbs at enemies.\nCannot walk over solid blocks."
 
+controller: GroundAI
 envDisabled: 0
 
 //Stat
@@ -258,12 +259,12 @@ parts: [
 //Tech Tree
 //alwaysUnlocked: true
 
-research: {
-    parent: raid
-    objectives: [
-        {
-            type: Research
-            content: assault-synthesizer
-        }
-    ]
-}
+// research: {
+//     parent: raid
+//     objectives: [
+//         {
+//             type: Research
+//             content: assault-synthesizer
+//         }
+//     ]
+// }

@@ -1,22 +1,22 @@
 localizedName: "Ferronickel Forge"
-description: "Smelts hematite and nickel into ferronickel.\nRequires power and sulfur as fuel."
+description: "Smelts hematite and nickel into ferronickel.\nRequires power and heat."
 
 //Stat
 size: 3
+heatRequirement: 12
 requirements: [
     hematite/150
     nickel/150
-    silicon/100
+    msilicon/100
 ]
 consumes: {
     power: 3
     items: [
         hematite/3
         nickel/3
-        sulfur/5
     ]
 }
-outputItem: ferronickel/5
+outputItem: ferronickel/6
 
 craftTime: 75
 
@@ -66,13 +66,13 @@ research: {
     parent: silicon-arc-dissolver
     objectives: [
         {
-            type: Research
-            content: sulfur
+            type: OnSector
+            preset: march
         }
     ]
 }
 researchCost: [
-    hematite/175
-    nickel/175
-    silicon/75
+    hematite/200
+    nickel/225
+    msilicon/175
 ]

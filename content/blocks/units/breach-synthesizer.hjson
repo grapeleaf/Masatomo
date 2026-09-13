@@ -26,7 +26,7 @@ plans: [
             sulfur/50
             msilicon/40
         ]
-        time: 1800
+        time: 1200
     }
 ]
 
@@ -34,16 +34,16 @@ plans: [
 squareSprite: false
 
 //Research
-research: {
-    parent: assault-synthesizer
-    // objectives: [
-    //     {
-    //         type: OnSector
-    //         preset: march
-    //     }
-    // ]
-}
-researchCost: [
-    ferronickel/250
-    msilicon/200
-]
+// research: {
+//     parent: assault-synthesizer
+//     objectives: [
+//         {
+//             type: OnSector
+//             preset: march
+//         }
+//     ]
+// }
+// researchCost: [
+//     ferronickel/250
+//     msilicon/200
+// ]

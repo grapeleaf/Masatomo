@@ -1,0 +1,63 @@
+localizedName: "Sulfur Heater"
+description:"Generates heat from sulfur.\n[red]Explodes violently if destroyed."
+
+//Stat
+scaledHealth: 100
+size: 3
+
+baseExplosiveness: 12
+explosivenessScale: 8
+flammabilityScale: 8
+
+heatOutput: 24
+warmupRate: 0.1
+
+requirements: [
+    hematite/125
+    nickel/100
+    msilicon/75
+]
+consumes: {
+    power: 1.5
+    items: [
+        sulfur/3
+    ]
+}
+craftTime: 50
+
+//Visual
+rotateDraw: false
+squareSprite: true
+ambientSound: loopElectricHum
+ambientSoundVolume: 0.5
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawHeatOutput
+    }
+  ]
+}
+
+//Tech Tree
+//alwaysUnlocked: true
+
+category: crafting
+research: {
+    parent: silicon-arc-dissolver
+    objectives: [ 
+        {
+            type: OnSector
+            preset: march
+        }
+    ]
+}
+researchCost: [
+    hematite/175
+    nickel/175
+    msilicon/75
+]

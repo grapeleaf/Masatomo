@@ -1,0 +1,16 @@
+//Stat
+difficulty: 1
+planet: masatomo
+sector: 70
+captureWave: 0
+
+//Tech Tree
+research: {
+    parent: commencement
+    objectives: [
+        {
+            type: SectorComplete
+            preset: commencement
+        }
+    ]
+}

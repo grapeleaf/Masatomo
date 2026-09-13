@@ -10,7 +10,9 @@ const raid = extend(UnitType, "raid", {
 
         this.allowLegStep = false;
 
-        //this.initPathType();
+        this.flowfieldPathType = Pathfinder.costGround;
+        this.pathCost = ControlPathfinder.costGround;
+        this.pathCostId = ControlPathfinder.costTypes.indexOf(ControlPathfinder.costGround);
     }
 });
 raid.constructor = () => extend(LegsUnit, {});
@@ -20,6 +22,10 @@ const ambush = extend(UnitType, "ambush", {
         this.super$init();
 
         this.allowLegStep = false;
+
+        this.flowfieldPathType = Pathfinder.costGround;
+        this.pathCost = ControlPathfinder.costGround;
+        this.pathCostId = ControlPathfinder.costTypes.indexOf(ControlPathfinder.costGround);
     }
 });
 ambush.constructor = () => extend(LegsUnit, {});

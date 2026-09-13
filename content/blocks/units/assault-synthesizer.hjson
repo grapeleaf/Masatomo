@@ -27,7 +27,7 @@ plans: [
             nickel/50
             msilicon/40
         ]
-        time: 1800
+        time: 1200
     }
 ]
 
@@ -37,14 +37,14 @@ squareSprite: false
 //Research
 research: {
     parent: core-chamber
-    // objectives: [
-    //     {
-    //         type: OnSector
-    //         preset: commencement
-    //     }
-    // ]
+    objectives: [
+        {
+            type: OnSector
+            preset: march
+        }
+    ]
 }
 researchCost: [
-    ferronickel/250
-    msilicon/200
+    ferronickel/50
+    msilicon/150
 ]

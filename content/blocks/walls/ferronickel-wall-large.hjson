@@ -1,5 +1,5 @@
 localizedName: "Large Ferronickel Wall"
-description: Protects structures from incoming damage.
+description: "Protects structures from enemy assault.\nHas high armor but low health."
 
 category: defense
 
@@ -22,5 +22,5 @@ research: {
     parent: ferronickel-wall-small
 }
 researchCost: [
-    hematite/225
+    ferronickel/225
 ]

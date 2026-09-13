@@ -1,0 +1,42 @@
+localizedName: "Resonance Emitter"
+description:"Delivers resonance to structures inside of its radius.\n[red]Explodes violently if destroyed."
+
+//Stat
+scaledHealth: 100
+size: 3
+
+
+requirements: [
+    hematite/125
+    nickel/100
+    msilicon/75
+]
+consumes: {
+    power: 1.5
+}
+craftTime: 50
+
+//Visual
+rotateDraw: false
+squareSprite: true
+ambientSound: loopElectricHum
+ambientSoundVolume: 0.5
+
+//Tech Tree
+alwaysUnlocked: true
+
+category: crafting
+research: {
+    parent: silicon-arc-dissolver
+    objectives: [ 
+        {
+            type: OnSector
+            preset: march
+        }
+    ]
+}
+researchCost: [
+    hematite/175
+    nickel/175
+    msilicon/75
+]
