@@ -1,4 +1,4 @@
-localizedName: "Resonance Emitter"
+localizedName: "Platinum Separator"
 description:"Delivers resonance to structures inside of its radius.\n[red]Explodes violently if destroyed."
 
 //Stat
@@ -12,8 +12,9 @@ requirements: [
 ]
 consumes: {
     power: 1.5
-    items: [
-        qanetite/3
+    liquids: [
+        slag/1
+        oxygen-gas/0.66666666666
     ]
 }
 craftTime: 50
@@ -29,7 +30,7 @@ alwaysUnlocked: true
 
 category: crafting
 research: {
-    parent: silicon-arc-dissolver
+    parent: resonance-emitter
     objectives: [ 
         {
             type: OnSector

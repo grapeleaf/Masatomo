@@ -1,0 +1,12 @@
+localizedName: Qanetite
+
+cost: 1.5
+explosiveness: 1.5
+flammability: 0
+radioactivity: 1
+hardness: 4
+color: ff4464
+
+//alwaysUnlocked: true
+research: ferronickel
+shownPlanets: [masatomo]
